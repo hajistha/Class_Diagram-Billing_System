@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OnlineShoppingBillingSystem.Customer">
+    <Position X="11" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Makes" Type="OnlineShoppingBillingSystem.Payment">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.744" Y="0.133" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAECAAIAAAAAAAAgIAAAABQAAQAAAAAaAQAAIAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order" />
+      <Property Name="Makes" />
+      <Property Name="has" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlineShoppingBillingSystem.Product">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAABAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineShoppingBillingSystem.Admin">
+    <Position X="7.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Categorize" Type="OnlineShoppingBillingSystem.Product">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.38" Y="0.56" Height="0.182" Width="1.003" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAAAAEBAAAIABQAACQAAAASAAAAAAAAAAA=</HashCode>
+      <FileName>Admin.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Manage" />
+      <Property Name="Categorize" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlineShoppingBillingSystem.Payment">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIASAAAAAAABAAAIAAAAAAAAAAAAQAAIAAAAAEABAAA=</HashCode>
+      <FileName>Payment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Paid_by" />
+      <Property Name="ValidatedBy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlineShoppingBillingSystem.Shopping_Cart">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEA=</HashCode>
+      <FileName>Shopping_Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OnlineShoppingBillingSystem.PaymentValidator">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="OnlineShoppingBillingSystem.UserState">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAABAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>UserState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OnlineShoppingBillingSystem.OrderStatus">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACgAAAAAAAAAAAoAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>OrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
